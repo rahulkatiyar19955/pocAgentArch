@@ -68,12 +68,12 @@ system_cpu_num_processors=$(nproc)
 # Network info
 # echo "Measuring download speed..." && network_download_speed=$(speed_test_avg download)
 # echo "Measuring upload speed..." && network_upload_speed=$(speed_test_avg upload)
-echo "Measuring ping..." && network_ping=$(ping -c 4 "${ping_test_endpoint}" | tail -1 | awk '{print $4}' | cut -d '/' -f 2)
+# echo "Measuring ping..." && network_ping=$(ping -c 4 "${ping_test_endpoint}" | tail -1 | awk '{print $4}' | cut -d '/' -f 2)
 # GPU info
-system_gpus=$(lspci | grep -i "VGA" | awk 'BEGIN{FS=": "} {print $2}')
+# system_gpus=$(lspci | grep -i "VGA" | awk 'BEGIN{FS=": "} {print $2}')
 # Installed package info
 ros_version=$(get_ros_version)
-python_version=$(python --version)
+python_version=$(python3 --version)
 
 # Output
 cat <<EOF
