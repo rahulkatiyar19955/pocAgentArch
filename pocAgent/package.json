@@ -1,0 +1,30 @@
+{
+	"name": "pocagent",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"bin": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"pkg": {
+		"assets": [
+			"websocket/index.js"
+		],
+		"targets": [
+			"node14-linux-x64"
+		],
+		"outputPath": "binary",
+    "name": "nodeServer"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.1",
+		"express-ws": "^5.0.2",
+		"ws": "^8.3.0"
+	},
+	"devDependencies": {
+		"pkg": "^5.5.1"
+	}
+}
