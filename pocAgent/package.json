@@ -12,7 +12,7 @@
 			"websocket/index.js"
 		],
 		"targets": [
-			"node14-linux-x64"
+			"node14-linux-x64", "node14-linux-arm64"
 		],
 		"outputPath": "binary",
     "name": "nodeServer"
