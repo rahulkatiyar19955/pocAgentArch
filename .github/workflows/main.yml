@@ -32,5 +32,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd pocAgent
+          ls
           npm install
           npx pkg package.json
