@@ -34,4 +34,5 @@ jobs:
           cd pocAgent
           ls
           npm install
-          npx pkg package.json
+          npx pkg .
+          ls
