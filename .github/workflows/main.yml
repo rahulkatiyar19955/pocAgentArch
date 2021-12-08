@@ -36,3 +36,7 @@ jobs:
           npm install
           npx pkg .
           ls
+      - uses: actions/upload-artifact@v2
+        with:
+          name: Executable-files
+          path: binary/
