@@ -39,4 +39,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: Executable-files
-          path: binary/
+          path: pocAgent/binary/
